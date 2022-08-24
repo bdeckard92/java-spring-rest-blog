@@ -20,9 +20,10 @@ public class DatabaseLoader implements ApplicationRunner {
             "Earbuds", "Speakers", "Tripod", "Instant Pot", "Coffee Cup", "Keyboard", "Sunglasses"};
     public List<Post> randomPosts = new ArrayList<>();
     public List<Author> authors = new ArrayList<>();
-
+    
+    @Autowired  
     private final PostRepository postRepository;
-    @Autowired    
+      
     public DatabaseLoader(PostRepository postRepository) {
         this.postRepository = postRepository;
     }
