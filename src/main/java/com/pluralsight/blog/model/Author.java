@@ -27,7 +27,7 @@ public class Author {
 
     public Author() {
         super();
-        ArrayList<Post> posts = new ArrayList<>();
+        this.posts = new ArrayList<>();
 
     }
 
