@@ -15,6 +15,7 @@ public class Author {
     public static final PasswordEncoder PASSWORD_ENCODER = new BCryptPasswordEncoder();
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Version private Long version;
     private Long id;
     private String firstname;
     private String lastname;
